@@ -19,7 +19,7 @@ class Enemy:
         if self.direction:
             c *= -1 
         x1 = self.x + c 
-        if x1 < 0 or (x1+self.width) > self.world_width: #prevents the player from going off screen
+        if x1 < 0 or (x1+self.width) > self.world_width: #prevents the enemy from going off screen
             self.direction = not self.direction 
             return 
         self.x = x1 
